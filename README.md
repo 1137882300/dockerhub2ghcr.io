@@ -43,6 +43,9 @@
 
 完成后，GitHub Actions 会自动拉取 DockerHub 镜像，并推送到 GHCR.IO。
 
+可以查看：https://github.com/1137882300/dockerhub2ghcr.io/pkgs/container/myimage
+
+
 ### 3. 国内加速镜像拉取
 
 为了加速国内的镜像下载速度，可以使用南京大学的开源镜像站。你只需要在拉取镜像时，将 `ghcr.io` 替换为 `ghcr.nju.edu.cn`：
@@ -58,3 +61,5 @@ docker pull ghcr.nju.edu.cn/<your-username>/<your-image>:<tag>
 - **防止镜像撤回或封禁**：同步到 GHCR.IO 私有仓库，即使镜像被撤回也不会影响使用。
 - **免费使用 GitHub 容器服务**：每月 2000 分钟的免费私有仓库运行时长，或公有仓库无限制时长。
 - **国内镜像站加速**：使用南京大学镜像站，让国内拉取 GHCR.IO 镜像更快更稳定。
+
+
