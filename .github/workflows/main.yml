@@ -1,5 +1,9 @@
 name: 将DockerHub镜像复制到GHCR.IO
 
+permissions:
+  contents: write  
+  packages: write 
+
 on:
   workflow_dispatch:
     inputs:
